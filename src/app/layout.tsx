@@ -7,6 +7,8 @@ import Footer from '@/components/Footer';
 import ShoppingCart from '@/components/ShoppingCart';
 import CookieConsent from '@/components/CookieConsent';
 import ChatWidget from '@/components/ChatWidget';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 
 const montserrat = Montserrat({
@@ -84,6 +86,8 @@ export default function RootLayout({
           <ShoppingCart />
           <CookieConsent />
           <ChatWidget />
+          <SpeedInsights />
+          <Analytics />
         </CartProvider>
       </body>
     </html>
